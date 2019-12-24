@@ -1,0 +1,6 @@
+.cache
+package.json
+package-lock.json
+public
+plugins/@cs125/gatsby-source-filesystem-frontmatter/__tests__/fixtures/file-with-frontmatter.json
+dist

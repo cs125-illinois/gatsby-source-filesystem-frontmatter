@@ -1,0 +1,83 @@
+{
+  "name": "@cs125/gatsby-source-filesystem-frontmatter",
+  "version": "2.1.40-rc1",
+  "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins, while also parsing YAML front matter from all files",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "contributors": [
+    "Geoffrey Challen <geoffrey.challen@gmail.com>"
+  ],
+  "scripts": {
+    "start": "concurrently -n gatsby,babel --handle-input \"nodemon\" \"npm run watch\"",
+    "test": "jest plugins/@cs125/gatsby-source-filesystem-frontmatter",
+    "build": "babel plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "better-queue": "^3.8.10",
+    "bluebird": "^3.7.2",
+    "chokidar": "3.3.1",
+    "file-type": "^12.4.2",
+    "fs-extra": "^8.1.0",
+    "gatsby-core-utils": "^1.0.25",
+    "got": "^10.2.0",
+    "gray-matter": "^4.0.2",
+    "md5-file": "^4.0.0",
+    "mime": "^2.4.4",
+    "pretty-bytes": "^5.3.0",
+    "progress": "^2.0.3",
+    "read-chunk": "^3.2.0",
+    "valid-url": "^1.0.9",
+    "xstate": "^4.7.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
+    "babel-preset-gatsby": "^0.2.26",
+    "babel-preset-gatsby-package": "^0.2.14",
+    "concurrently": "^5.0.2",
+    "cross-env": "^6.0.3",
+    "gatsby": "^2.18.8",
+    "gatsby-cli": "^2.8.22",
+    "gatsby-transformer-asciidoc": "^1.1.21",
+    "jest": "^24.9.0",
+    "nodemon": "2.0.2",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.18.17"
+  },
+  "types": "plugins/@cs125/gatsby-source-filesystem-frontmatter/types/index.d.ts",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-filesystem#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby.git",
+    "directory": "packages/gatsby-source-filesystem"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "package.json",
+      "package-lock.json",
+      "gatsby-config.js",
+      "gatsby-node.js"
+    ],
+    "exec": "gatsby develop"
+  }
+}
