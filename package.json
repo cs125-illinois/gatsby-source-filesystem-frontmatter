@@ -61,14 +61,13 @@
   },
   "types": "plugins/@cs125/gatsby-source-filesystem-frontmatter/types/index.d.ts",
   "main": "dist/index.js",
-  "homepage": "https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-filesystem#readme",
+  "homepage": "https://github.com/cs125-illinois/gatsby-source-filesystem-frontmatter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby.git",
-    "directory": "packages/gatsby-source-filesystem"
+    "url": "https://github.com/cs125-illinois/gatsby-source-filesystem-frontmatter.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/cs125-illinois/gatsby-source-filesystem-frontmatter/issues"
   },
   "license": "MIT",
   "engines": {
