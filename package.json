@@ -1,6 +1,6 @@
 {
   "name": "@cs125/gatsby-source-filesystem-frontmatter",
-  "version": "2.1.40-rc1",
+  "version": "2.1.40",
   "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins, while also parsing YAML front matter from all files",
   "keywords": [
     "gatsby",

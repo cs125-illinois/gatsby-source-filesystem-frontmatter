@@ -70,3 +70,7 @@ yarn-error.log
 
 # Plugin build
 /dist
+
+# Vim
+*.swo
+*.swp

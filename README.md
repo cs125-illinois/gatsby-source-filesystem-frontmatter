@@ -5,7 +5,7 @@ Adds support for reading frontmatter from any file to
 
 ## Install
 
-`npm install --save @cs125/gatsby-source-filesystem-frontmatter`
+`npm install @cs125/gatsby-source-filesystem-frontmatter`
 
 ## How to use
 
@@ -89,3 +89,12 @@ export const pageQuery = graphql`
   }
 `
 ```
+
+## Example
+
+This repository contains a minimal example Gatsby site that uses
+`@cs125/gatsby-source-filesystem-frontmatter` to extract frontmatter and
+[`gatsby-transformer-asciidoc`](https://www.gatsbyjs.org/packages/gatsby-transformer-asciidoc/)
+to transform Asciidoc files. Note that the extra `babel.config.json` file in the
+root of the repository is needed to allow both the example Gatsby site and
+plugin to share the same repository.
