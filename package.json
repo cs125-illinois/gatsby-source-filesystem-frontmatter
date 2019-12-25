@@ -11,12 +11,13 @@
     "Geoffrey Challen <geoffrey.challen@gmail.com>"
   ],
   "scripts": {
-    "start": "concurrently -n gatsby,babel --handle-input \"nodemon\" \"npm run watch\"",
+    "start": "preview && concurrently -n gatsby,babel --handle-input \"nodemon\" \"npm run watch\"",
     "test": "jest plugins/@cs125/gatsby-source-filesystem-frontmatter",
     "build": "babel plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "develop": "preview && gatsby develop",
     "clean": "gatsby clean"
   },
   "dependencies": {
@@ -49,6 +50,8 @@
     "gatsby-transformer-asciidoc": "^1.1.21",
     "jest": "^24.9.0",
     "nodemon": "2.0.2",
+    "package-preview": "^3.0.0",
+    "pnpm": "^4.6.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

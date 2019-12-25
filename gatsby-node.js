@@ -1,6 +1,6 @@
-// const { createFilePath } = require(`@cs125/gatsby-source-filesystem-frontmatter`)
-// Normally you would use the include above
-const { createFilePath } = require(`./dist/`)
+const {
+  createFilePath,
+} = require(`@cs125/gatsby-source-filesystem-frontmatter`)
 const path = require(`path`)
 const slash = require(`slash`)
 
