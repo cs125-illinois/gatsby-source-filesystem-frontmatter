@@ -32,6 +32,10 @@ flow-typed
 coverage
 decls
 examples
+
 plugin
 /*.js
 /babel.config.json
+.cache
+public
+
