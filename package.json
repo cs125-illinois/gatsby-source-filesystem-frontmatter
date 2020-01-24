@@ -1,6 +1,6 @@
 {
   "name": "@cs125/gatsby-source-filesystem-frontmatter",
-  "version": "2.1.40-rc10",
+  "version": "2.1.40-rc11",
   "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins, while also parsing YAML front matter from all files",
   "keywords": [
     "gatsby",
@@ -13,7 +13,7 @@
   "scripts": {
     "start": "preview && concurrently -n gatsby,babel --handle-input \"nodemon\" \"npm run watch\"",
     "test": "jest plugins/@cs125/gatsby-source-filesystem-frontmatter",
-    "build": "rm -rf dist && babel plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__ && cp plugins/@cs125/gatsby-source-filesystem-frontmatter/types/index.d.ts dist/ && cp plugins/@cs125/gatsby-source-filesystem-frontmatter/package.json dist/package.json",
+    "build": "rm -rf dist && babel plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__ && cp plugins/@cs125/gatsby-source-filesystem-frontmatter/types/index.d.ts dist/ && cp package.json dist/package.json",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
