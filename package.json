@@ -13,7 +13,7 @@
   "scripts": {
     "start": "preview && concurrently -n gatsby,babel --handle-input \"nodemon\" \"npm run watch\"",
     "test": "jest plugins/@cs125/gatsby-source-filesystem-frontmatter",
-    "build": "rm -rf dist && babel plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__ && cp plugins/@cs125/gatsby-source-filesystem-frontmatter/types/index.d.ts dist/ && cp package.json dist/",
+    "build": "rm -rf dist && babel plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__ && cp plugins/@cs125/gatsby-source-filesystem-frontmatter/types/index.d.ts dist/ && cp plugins/@cs125/gatsby-source-filesystem-frontmatter/package.json dist/package.json",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
