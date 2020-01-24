@@ -5,9 +5,11 @@ Adds support for reading frontmatter from any file to
 
 ## Install
 
-`npm install @cs125/gatsby-source-filesystem-frontmatter`
+```bash
+npm i @cs125/gatsby-source-filesystem-frontmatter
+```
 
-## How to use
+## Use
 
 Review the documentation and examples from
 [`gatsby-source-frontmatter`](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/).
