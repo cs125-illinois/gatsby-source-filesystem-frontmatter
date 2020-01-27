@@ -18,7 +18,8 @@
     "watch": "babel -w plugins/@cs125/gatsby-source-filesystem-frontmatter --out-dir dist --ignore **/__tests__",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "develop": "preview && gatsby develop",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "postinstall": "cp dist/* ."
   },
   "dependencies": {
     "better-queue": "^3.8.10",
