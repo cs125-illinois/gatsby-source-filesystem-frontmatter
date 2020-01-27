@@ -2,6 +2,7 @@ const fs = require(`fs-extra`)
 
 function loadNodeContent(fileNode) {
   try {
+    assert(fileNode.internal.content)
     return fileNode.internal.content
   } catch (err) {
     return fs.readFile(fileNode.absolutePath, `utf-8`)
