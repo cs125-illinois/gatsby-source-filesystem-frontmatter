@@ -19,12 +19,13 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "develop": "preview && gatsby develop",
     "clean": "gatsby clean",
-    "postinstall": "cp dist/* ."
+    "postinstall": "copyfiles dist/* ."
   },
   "dependencies": {
     "better-queue": "^3.8.10",
     "bluebird": "^3.7.2",
     "chokidar": "3.3.1",
+    "copyfiles": "^2.3.0",
     "file-type": "^13.1.2",
     "fs-extra": "^8.1.0",
     "gatsby-core-utils": "^1.0.26",
