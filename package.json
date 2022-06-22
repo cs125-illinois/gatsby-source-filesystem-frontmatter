@@ -29,7 +29,7 @@
     "file-type": "^13.1.2",
     "fs-extra": "^8.1.0",
     "gatsby-core-utils": "^1.0.26",
-    "got": "^10.2.2",
+    "got": "^11.8.5",
     "gray-matter": "^4.0.2",
     "md5-file": "^4.0.0",
     "mime": "^2.4.4",
