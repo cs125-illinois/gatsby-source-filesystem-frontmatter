@@ -47,7 +47,7 @@
     "babel-preset-gatsby-package": "^0.2.15",
     "concurrently": "^5.0.2",
     "cross-env": "^6.0.3",
-    "gatsby": "^2.19.3",
+    "gatsby": "^5.9.0",
     "gatsby-cli": "^2.8.27",
     "gatsby-transformer-asciidoc": "^1.1.22",
     "jest": "^25.1.0",
@@ -59,7 +59,7 @@
     "react-dom": "^16.12.0"
   },
   "peerDependencies": {
-    "gatsby": "^2.19.3"
+    "gatsby": "^5.9.0"
   },
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
